@@ -19,15 +19,18 @@ y = 1/(1+e^(-z))
 
 here, 
 y is the target value  
-z is the equation of a straight line i.e # w*x + b
+z is the equation of a straight line i.e  w*x + b
+
   w :- weight
   x :- features of dataset
   b :- bias value
   
 To calculate weight and bias in the equation we can use Gradient Descent 
+
   for w = w^ - L*dw
   for b = b^ - L*db
   
   dw and db are the change in loss function with respect to w and b
+  
   L is the Learning rate 
   w^ ad b^ are the previous parameters
