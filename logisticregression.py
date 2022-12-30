@@ -35,15 +35,13 @@ class logistic_regression:
       self.update_weight()
 
 
-
-
   def update_weight(self):
 
     # y^ formula --> sigmod function
     y_hat = 1 / (1 + np.exp(-(self.X.dot(self.w) + self.b )))
 
     # derivatives
-    dw = (1/self.m)*np.dot(self.X.T , (y_hat - self.Y))     #transpoisition is used to perform matrix multiplication , ex :- (2,3)*(3,4)
+    dw = (1/self.m)*np.dot(self.X.T , (y_hat - self.Y)) 
     db = (1/self.m)*np.sum(y_hat - self.Y)
 
     self.w = self.w - self.learning_rate * dw
