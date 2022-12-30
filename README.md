@@ -12,3 +12,22 @@ discrete datasets. Logistic Regression can be used to classify the observations 
 The sigmoid function is a mathematical function used to map the predicted values to probabilities. It maps any real value into another value within a range of 0 and 1.
 The value of the logistic regression must be between 0 and 1, which cannot go beyond this limit, so it forms a curve like the "S" form. The S-form curve is called the Sigmoid function or the logistic function.
 In logistic regression, we use the concept of the threshold value, which defines the probability of either 0 or 1. Such as values above the threshold value tends to 1, and a value below the threshold values tends to 0.
+
+equation of Sigmoid Function :- 
+
+y = 1/(1+e^(-z))
+
+here, 
+y is the target value  
+z is the equation of a straight line i.e # w*x + b
+  w :- weight
+  x :- features of dataset
+  b :- bias value
+  
+To calculate weight and bias in the equation we can use Gradient Descent 
+  for w = w^ - L*dw
+  for b = b^ - L*db
+  
+  dw and db are the change in loss function with respect to w and b
+  L is the Learning rate 
+  w^ ad b^ are the previous parameters
